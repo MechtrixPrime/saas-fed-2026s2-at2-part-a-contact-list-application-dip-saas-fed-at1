@@ -12,16 +12,16 @@ This guide explains how to set up the Laravel development environment used throu
 
 Install the following software before attending Session 1.
 
-| Software | Version |
-|-----------|----------|
-| Laragon | Latest |
-| PHP | 8.3 or newer |
-| Composer | Latest |
-| Node.js (LTS) | Latest LTS |
-| npm | Installed with Node.js |
-| Git | Latest |
-| Visual Studio Code | Latest |
-| Google Chrome or Microsoft Edge | Latest |
+| Software                        | Version                |
+| ------------------------------- | ---------------------- |
+| Laragon                         | Latest                 |
+| PHP                             | 8.3 or newer           |
+| Composer                        | Latest                 |
+| Node.js (LTS)                   | Latest LTS             |
+| npm                             | Installed with Node.js |
+| Git                             | Latest                 |
+| Visual Studio Code              | Latest                 |
+| Google Chrome or Microsoft Edge | Latest                 |
 
 ---
 
@@ -165,17 +165,18 @@ Open:
 .env
 ```
 
-Update the database settings.
+After session 4 Update the database settings.
 
 Example:
 
 ```env
-DB_CONNECTION=mysql
+DB_CONNECTION=sqlite
+<!-- DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=contact_list
 DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD= -->
 ```
 
 > Your lecturer may provide different settings for a particular class or assessment.
@@ -485,4 +486,3 @@ Throughout this course:
 - Follow the folder structure and naming conventions demonstrated by your lecturer.
 
 Following these conventions will ensure that demonstrations, practical activities and assessments work consistently across all lab computers.
-
