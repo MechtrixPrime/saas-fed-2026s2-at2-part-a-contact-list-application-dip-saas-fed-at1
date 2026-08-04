@@ -307,6 +307,9 @@ Create a controller.
 
 ```bash
 php artisan make:controller ContactController
+
+# alternative (recommended) - https://laravel.com/docs/13.x/eloquent
+php artisan make:model Flight -mfsc
 ```
 
 Create a model with migration.
