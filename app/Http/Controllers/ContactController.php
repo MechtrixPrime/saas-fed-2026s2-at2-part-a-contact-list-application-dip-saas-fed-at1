@@ -10,13 +10,9 @@ final class ContactController extends Controller
 {
     public function index(string $name)
     {
-        dd($name);
+        // dd($name);
 
-        return "Welcome to the index method in the contact controller {$name}";
+        // return "Welcome to the index method in the contact controller {$name}";
+        return view("contacts.index", ["name" => $name]);
     }
-
-    // public function read_contact($id)
-    // {
-    //     return "Welcome to the index method in the contact controller";
-    // }
 }
