@@ -49,6 +49,12 @@ Do **not** store projects inside:
 
 # Verify Your Installation
 
+In this repo this installation process is already complete however here is the reference : https://laravel.com/docs/13.x/installation
+
+```bash
+composer create-project laravel/laravel contact-list-app
+```
+
 Open **Git Bash** from Laragon.
 
 Run the following commands.
