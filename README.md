@@ -1,8 +1,10 @@
-# Laravel Development Environment Setup
+# Conrtact List App Development Environment Setup
+
+The completed starter repo can be found at: https://github.com/Robbo-lab/contact-list-2026-s1
 
 This guide explains how to set up the Laravel development environment used throughout this course.
 
-> **Important**ß
+> **Important**
 >
 > All students are expected to use the standard NMTAFE development environment to ensure demonstrations, practical activities and assessments are consistent.
 
