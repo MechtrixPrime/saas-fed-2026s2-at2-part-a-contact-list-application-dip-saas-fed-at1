@@ -1,4 +1,4 @@
-# Conrtact List App Development Environment Setup
+# Contact List App Development Environment Setup
 
 The completed starter repo can be found at: https://github.com/Robbo-lab/contact-list-2026-s1
 
