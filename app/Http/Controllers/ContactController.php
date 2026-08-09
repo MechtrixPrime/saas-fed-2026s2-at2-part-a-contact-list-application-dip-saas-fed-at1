@@ -6,11 +6,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-final class ContactController extends Controller
+final class ContactController
 {
     public function index(string $name)
     {
-        dd($name);
+        // dd($name);
 
         return "Welcome to the index method in the contact controller {$name}";
     }
