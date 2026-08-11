@@ -197,7 +197,7 @@
                 <p class="text-sm text-zinc-400">
                     <span class="block sm:inline">All rights reserved.</span>
 
-                    <a class="inline-block underline transition hover:text-zinc-600/75 text-zinc-500 hover:text-zinc-500/75"
+                    {{-- <a class="inline-block underline transition hover:text-zinc-600/75 text-zinc-500 hover:text-zinc-500/75"
                        href="{{ route('web.static.terms-and-conditions') }}">
                         Terms &amp; Conditions
                     </a>
@@ -207,7 +207,7 @@
                     <a class="inline-block underline transition hover:text-zinc-600/75 text-zinc-500 hover:text-zinc-500/75"
                        href="{{ route('web.static.privacy') }}">
                         Privacy Policy
-                    </a>
+                    </a> --}}
                 </p>
 
                 <p class="mt-4 text-sm sm:order-first sm:mt-0 text-zinc-400">
