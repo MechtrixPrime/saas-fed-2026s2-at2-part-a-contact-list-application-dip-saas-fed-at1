@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Web;
 
-// use App\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 // use App\Http\Requests\StoreContactUsRequest;
 // use App\Models\Message;
 // use App\Models\Topic;
 
-final class ContactUsController
+final class ContactUsController extends Controller
 {
     public function index()
     {
@@ -43,7 +43,14 @@ final class ContactUsController
             ],
         ];
 
+
+
         // return the contact-us view with the topics
-        return view('topics.index', compact('topics'));
+        return view('web.static.contact-us', compact('topics'));
+    }
+
+    public function thankyou()
+    {
+        return view('web.static.thank-you');
     }
 }
