@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/contacts/{name}', [ContactController::class, 'index']);
+Route::get('/contacts', [ContactController::class, 'index']);
