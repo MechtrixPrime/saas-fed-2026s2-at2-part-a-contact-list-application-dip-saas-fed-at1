@@ -14,13 +14,18 @@
                 </div>
             </div>
 
-            <!-- repeat for each contact -->
+            <!-- TODO repeat for each contact -->
 
             <!-- contact card -->
-            {{-- @dd($variable) --}}
+
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-zinc-900">
                     Contact Card here
+                    {{-- @dd($contact) --}}
+                    @dump($contact)
+                    <h2>{{ $contact['name'] }}</h2>
+                    <p>{{ $contact['email'] }}</p>
+                    <p>{{ $contact['phone'] }}</p>
                 </div>
             </div>
             <!-- /contact card -->
