@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Http\Controllers\Web\ContactUsController;
 use App\Http\Controllers\Web\StaticPageController;
+use App\Http\Controllers\Client\ContactController;
 use Illuminate\Support\Facades\Route;
 
 Route::get("/about", [StaticPageController::class, "about"])->name("about");
