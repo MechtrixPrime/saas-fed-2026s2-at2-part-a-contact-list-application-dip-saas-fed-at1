@@ -1,10 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactController;
+declare(strict_types=1);
 
-Route::get('/', function () {
-    return view('welcome');
-});
+require __DIR__ . "/web.static.php";
 
-Route::get('/contacts/{name}', [ContactController::class, 'index']);
+// require __DIR__ . "/web.client.php";
+
+// require __DIR__ . "/web.admin.php";
+
+// require __DIR__ . "/auth.php";

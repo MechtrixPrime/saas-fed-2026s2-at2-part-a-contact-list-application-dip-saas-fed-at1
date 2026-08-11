@@ -13,7 +13,7 @@
                     Contact actions (add, search/filter)
                 </div>
             </div>
-            {{ dd(get_defined_vars()) }}
+            <!-- {{ dd(get_defined_vars()) }} -->
             <!-- repeat for each contact -->
 
             <!-- contact card -->
