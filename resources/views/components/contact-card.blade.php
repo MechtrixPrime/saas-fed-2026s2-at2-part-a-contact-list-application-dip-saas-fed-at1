@@ -1,10 +1,11 @@
-{{-- @dd($attributes) --}}
+@dump($attributes)
 @props([
     'contact',
     // 'showPhone' => true,
     'showPhone',
 ])
 {{-- @dd($showPhone) --}}
+@dd($attributes)
 
 <div>
     {{-- @dd($contact) --}}
