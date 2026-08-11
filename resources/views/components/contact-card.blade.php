@@ -2,7 +2,7 @@
 @props([
     'contact',
     // 'showPhone' => true,
-    'showPhone',
+    'showPhone' => false,
 ])
 {{-- @dd($showPhone) --}}
 {{-- @dd($attributes)
@@ -19,4 +19,16 @@
     @if ($showPhone)
         <p>{{ $contact['phone'] }}</p>
     @endif
+</div>
+
+<div {{ $attributes->merge(['class' => 'contact-card']) }}>
+    <h2>{{ $contact['name'] }}</h2>
+    <p>{{ $contact['email'] }}</p>
+    <p>{{ $contact['phone'] }}</p>
+
+    <div>
+        {{ dump($actions) }}
+        {{ $actions }}
+    </div>
+    {{ $slot }}
 </div>

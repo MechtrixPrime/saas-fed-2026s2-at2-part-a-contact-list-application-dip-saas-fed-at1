@@ -22,10 +22,18 @@
                 <div class="p-6 text-zinc-900">
                     Contact Card here
                     <x-contact-card :contact="$contact">
+                        <x-slot:actions>
+                            <a href="/contacts/1">
+                                View Contact
+                            </a>
+                        </x-slot:actions>
+                        This is a current contact.
+                    </x-contact-card>
+                    {{-- <x-contact-card :contact="$contact">
                         <a href="/contacts/1">
                             View Contact
                         </a>
-                    </x-contact-card>
+                    </x-contact-card> --}}
                     {{-- <x-contact-card
                         :contact="$contact"
                         :showPhone="true"
