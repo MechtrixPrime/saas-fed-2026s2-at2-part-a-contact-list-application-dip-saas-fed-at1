@@ -10,18 +10,20 @@
 
 {{-- <div> --}}
 {{-- <div {{ $attributes }}> --}}
-<div {{ $attributes->merge(['class' => 'contact-card']) }}>
-    {{-- @dd($attributes) --}}
-    {{-- @dd($contact) --}}
-    {{-- @dump($contact) --}}
-    <h2>{{ $contact['name'] }}</h2>
-    <p>{{ $contact['email'] }}</p>
-    @if ($showPhone)
-        <p>{{ $contact['phone'] }}</p>
-    @endif
+<div class="{{ $contact['active'] ? 'text-green-500' : 'text-red-500' }}">
+    <div {{ $attributes->merge(['class' => 'contact-card']) }}>
+        {{-- @dd($attributes) --}}
+        {{-- @dd($contact) --}}
+        {{-- @dump($contact) --}}
+        <h2>{{ $contact['name'] }}</h2>
+        <p>{{ $contact['email'] }}</p>
+        @if ($showPhone)
+            <p>{{ $contact['phone'] }}</p>
+        @endif
+    </div>
 </div>
 
-<div {{ $attributes->merge(['class' => 'contact-card']) }}>
+{{-- <div {{ $attributes->merge(['class' => 'contact-card']) }}>
     <h2>{{ $contact['name'] }}</h2>
     <p>{{ $contact['email'] }}</p>
     <p>{{ $contact['phone'] }}</p>
@@ -31,4 +33,4 @@
         {{ $actions }}
     </div>
     {{ $slot }}
-</div>
+</div> --}}
