@@ -21,7 +21,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-zinc-900">
                     Contact Card here
-                    <x-contact-card :contact="$contact" />
+                    <x-contact-card :contact="$contact" :showPhone="false" />
                     {{-- <x-contact-card/> --}}
                 </div>
             </div>

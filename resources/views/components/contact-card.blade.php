@@ -1,7 +1,8 @@
 {{-- @dd($attributes) --}}
 @props([
     'contact',
-    'showPhone' => true,
+    // 'showPhone' => true,
+    'showPhone',
 ])
 {{-- @dd($showPhone) --}}
 
@@ -10,5 +11,7 @@
     {{-- @dump($contact) --}}
     <h2>{{ $contact['name'] }}</h2>
     <p>{{ $contact['email'] }}</p>
-    <p>{{ $contact['phone'] }}</p>
+    @if ($showPhone)
+        <p>{{ $contact['phone'] }}</p>
+    @endif
 </div>
