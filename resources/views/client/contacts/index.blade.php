@@ -21,12 +21,23 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-zinc-900">
                     Contact Card here
-                    <x-contact-card
+                    <x-contact-card :contact="$contact">
+                        <a href="/contacts/1">
+                            View Contact
+                        </a>
+                    </x-contact-card>
+                    {{-- <x-contact-card
+                        :contact="$contact"
+                        :showPhone="true"
+                        class="shadow"
+                        id="main-contact"
+                    /> --}}
+                    {{-- <x-contact-card
                         :contact="$contact"
                         :showPhone="true"
                         class="contact-card"
                         id="main-contact"
-                    />
+                    /> --}}
                     {{-- <x-contact-card :contact="$contact" :showPhone="false" /> --}}
                     {{-- <x-contact-card/> --}}
                 </div>

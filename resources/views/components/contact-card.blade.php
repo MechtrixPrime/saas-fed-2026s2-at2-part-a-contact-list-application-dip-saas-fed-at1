@@ -5,9 +5,13 @@
     'showPhone',
 ])
 {{-- @dd($showPhone) --}}
-@dd($attributes)
+{{-- @dd($attributes)
+@dd($attributes['class']) --}}
 
-<div>
+{{-- <div> --}}
+{{-- <div {{ $attributes }}> --}}
+<div {{ $attributes->merge(['class' => 'contact-card']) }}>
+    {{-- @dd($attributes) --}}
     {{-- @dd($contact) --}}
     {{-- @dump($contact) --}}
     <h2>{{ $contact['name'] }}</h2>
