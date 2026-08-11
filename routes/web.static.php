@@ -7,19 +7,21 @@ use App\Http\Controllers\Web\StaticPageController;
 use App\Http\Controllers\Client\ContactController;
 use Illuminate\Support\Facades\Route;
 
-Route::get("/about", [StaticPageController::class, "about"])->name("about");
+Route::name("web.static.")->group(function (): void {
+    Route::get("/about", [StaticPageController::class, "about"])->name("about");
 
-Route::get("/contact", [StaticPageController::class, "contact"])->name(
-    "contact",
-);
+    Route::get("/contact", [StaticPageController::class, "contact"])->name(
+        "contact",
+    );
 
-Route::get("/privacy", [StaticPageController::class, "privacy"])->name(
-    "privacy",
-);
+    Route::get("/privacy", [StaticPageController::class, "privacy"])->name(
+        "privacy",
+    );
 
-Route::get("/terms-and-conditions", [
-    StaticPageController::class,
-    "terms",
-])->name("terms-and-conditions");
+    Route::get("/terms-and-conditions", [
+        StaticPageController::class,
+        "terms",
+    ])->name("terms-and-conditions");
+});
 
 Route::get("/contacts/{name}", [ContactController::class, "index"]);
