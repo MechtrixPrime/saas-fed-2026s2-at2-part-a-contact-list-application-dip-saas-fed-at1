@@ -4,17 +4,54 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
+<<<<<<< HEAD
                 <div class="shrink-0 flex items-center"></div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                         ToDo
+=======
+                <div class="shrink-0 flex items-center">
+                    {{-- <a href="{{ route('home') }}">
+                        <x-application-logo
+                            class="block h-9 w-auto fill-current text-laravel-500 hover:text-laravel-900"/>
+                    </a> --}}
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+
+                    {{-- <x-nav-link :href="route('home')" :active="request()->routeIs('home')">
+                        {{ __('Home') }}
+                    </x-nav-link>
+
+                    @auth()
+                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                            {{ __('Dashboard') }}
+                        </x-nav-link>
+
+                        <x-nav-link :href="route('admin.index')" :active="request()->routeIs('admin.*')">
+                            {{ __('Admin') }}
+                        </x-nav-link>
+                    @endauth
+
+                    <x-nav-link :href="route('web.static.about')" :active="request()->routeIs('web.static.about')">
+                        {{ __('About') }}
+                    </x-nav-link> --}}
+
+>>>>>>> feat/session4
                 </div>
 
             </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6 gap-4">
+<<<<<<< HEAD
+=======
+
+                @auth
+
+>>>>>>> feat/session4
                     <x-dropdown align="right" width="48">
 
                         <x-slot name="trigger">
@@ -22,6 +59,10 @@
                                 class="inline-flex items-center px-3 py-2 border border-transparent
                                    text-sm leading-4 font-medium rounded-md text-zinc-500 bg-white
                                    hover:text-zinc-700 focus:outline-none transition ease-in-out duration-150">
+<<<<<<< HEAD
+=======
+                                <div>{{ Auth::user()->name }}</div>
+>>>>>>> feat/session4
 
                                 <div class="ms-1">
                                     <i class="fa-solid fa-caret-down "></i>
@@ -30,10 +71,43 @@
                         </x-slot>
 
                         <x-slot name="content">
+<<<<<<< HEAD
 
                         </x-slot>
 
                     </x-dropdown>
+=======
+                            <x-dropdown-link :href="route('profile.edit')">
+                                {{ __('Profile') }}
+                            </x-dropdown-link>
+
+                            <!-- Authentication -->
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+
+                                <x-dropdown-link :href="route('logout')"
+                                                 onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                    {{ __('Sign Out') }}
+                                </x-dropdown-link>
+                            </form>
+                        </x-slot>
+
+                    </x-dropdown>
+
+                @else
+
+                    {{-- <x-secondary-link-button href="{{ route('login') }}">
+                        {{ __('Sign In') }}
+                    </x-secondary-link-button>
+
+                    @if (Route::has('register'))
+                        <x-primary-link-button href="{{ route('register') }}">
+                            {{ __('Join Us') }}
+                        </x-primary-link-button>
+                    @endif --}}
+                @endauth
+>>>>>>> feat/session4
             </div>
 
             <!-- Hamburger -->
@@ -59,10 +133,21 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
+<<<<<<< HEAD
+=======
+            @auth
+                <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    {{ __('Dashboard') }}
+                </x-responsive-nav-link>
+            @else
+
+            @endauth
+>>>>>>> feat/session4
         </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-zinc-200">
+<<<<<<< HEAD
                 <div class="px-4">
                     <div class="font-medium text-base text-zinc-800"></div>
                     <div class="font-medium text-sm text-zinc-500"></div>
@@ -79,6 +164,46 @@
                         </x-responsive-nav-link>
                     </form>
                 </div>
+=======
+            @auth
+                <div class="px-4">
+                    <div class="font-medium text-base text-zinc-800">{{ Auth::user()->name }}</div>
+                    <div class="font-medium text-sm text-zinc-500">{{ Auth::user()->email }}</div>
+                </div>
+
+                <div class="mt-3 space-y-1">
+                    <x-responsive-nav-link :href="route('profile.edit')">
+                        {{ __('Profile') }}
+                    </x-responsive-nav-link>
+
+                    <!-- Authentication -->
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-responsive-nav-link :href="route('logout')"
+                                               onclick="event.preventDefault();
+                                               this.closest('form').submit();">
+                            {{ __('Sign Out') }}
+                        </x-responsive-nav-link>
+
+                    </form>
+                </div>
+
+            @else
+
+                {{-- <x-responsive-nav-link href="{{ route('login') }}">
+                    {{ __('Sign In') }}
+                </x-responsive-nav-link>
+
+                @if (Route::has('register'))
+                    <x-responsive-nav-link href="{{ route('register') }}">
+                        {{ __('Join Us') }}
+                    </x-responsive-nav-link>
+                @endif --}}
+
+            @endauth
+
+>>>>>>> feat/session4
         </div>
     </div>
 </nav>

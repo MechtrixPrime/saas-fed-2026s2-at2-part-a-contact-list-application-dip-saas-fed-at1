@@ -9,8 +9,37 @@ use Illuminate\View\View;
 
 final class StaticPageController extends Controller
 {
+<<<<<<< HEAD
     public function about(): View
     {
         return view("web.static.about");
+=======
+    /**
+     * Display the Site Welcome / Index page
+     */
+    public function home(): View
+    {
+        return view('web.static.welcome');
+    }
+
+    public function about(): View
+    {
+        return view('web.static.about');
+    }
+
+    public function contact(): View
+    {
+        return view('web.static.contact-us');
+    }
+
+    public function privacy(): View
+    {
+        return view('web.static.privacy');
+    }
+
+    public function terms(): View
+    {
+        return view('web.static.terms');
+>>>>>>> feat/session4
     }
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Http\Controllers\Web\ContactUsController;
 use App\Http\Controllers\Web\StaticPageController;
+<<<<<<< HEAD
 use App\Http\Controllers\Client\ContactController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +26,32 @@ Route::name("web.static.")->group(function (): void {
 });
 
 Route::get("/contacts/{name}", [ContactController::class, "index"]);
+=======
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', [StaticPageController::class, 'home'])
+    ->name('home');
+
+Route::name('web.static.')->group(function (): void {
+    Route::get('/about', [StaticPageController::class, 'about'])
+        ->name('about');
+
+    Route::get('/contact', [StaticPageController::class, 'contact'])
+        ->name('contact');
+
+    Route::get('/privacy', [StaticPageController::class, 'privacy'])
+        ->name('privacy');
+
+    Route::get('/terms-and-conditions', [StaticPageController::class, 'terms'])
+        ->name('terms-and-conditions');
+
+    Route::get('contact-us', [ContactUsController::class, 'index'])
+        ->name('contact-us');
+
+    Route::post('contact-us', [ContactUsController::class, 'store'])
+        ->name('contact-us.store');
+
+    Route::get('thank-you', [ContactUsController::class, 'thankyou'])
+        ->name('thank-you');
+});
+>>>>>>> feat/session4
