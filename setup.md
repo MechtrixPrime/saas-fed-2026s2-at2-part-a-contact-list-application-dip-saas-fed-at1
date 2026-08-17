@@ -38,7 +38,7 @@ Notice: to run these commands on VS code, ensure laragon is added to "path" by g
 `
 Then you might have to log off and on to see effects
 
-Side note: this is confirmed to have worked on Tafe computers as I did it in room "303" on computer second last on the right (when entering the room)
+Side note: this is confirmed to have worked on Tafe computers as I did it in room "303" on computer second last on the right (near the window)
 
 Run the following commands:
 
