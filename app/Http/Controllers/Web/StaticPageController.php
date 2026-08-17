@@ -9,11 +9,6 @@ use Illuminate\View\View;
 
 final class StaticPageController extends Controller
 {
-<<<<<<< HEAD
-    public function about(): View
-    {
-        return view("web.static.about");
-=======
     /**
      * Display the Site Welcome / Index page
      */
@@ -40,6 +35,5 @@ final class StaticPageController extends Controller
     public function terms(): View
     {
         return view('web.static.terms');
->>>>>>> feat/session4
     }
 }
