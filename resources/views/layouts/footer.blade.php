@@ -197,11 +197,7 @@
                 <p class="text-sm text-zinc-400">
                     <span class="block sm:inline">All rights reserved.</span>
 
-<<<<<<< HEAD
-                    <a class="inline-block underline transition hover:text-zinc-600/75 text-zinc-500 hover:text-zinc-500/75"
-=======
                     {{-- <a class="inline-block underline transition hover:text-zinc-600/75 text-zinc-500 hover:text-zinc-500/75"
->>>>>>> feat/session4
                        href="{{ route('web.static.terms-and-conditions') }}">
                         Terms &amp; Conditions
                     </a>
@@ -211,19 +207,11 @@
                     <a class="inline-block underline transition hover:text-zinc-600/75 text-zinc-500 hover:text-zinc-500/75"
                        href="{{ route('web.static.privacy') }}">
                         Privacy Policy
-<<<<<<< HEAD
-                    </a>
-                </p>
-
-                <p class="mt-4 text-sm sm:order-first sm:mt-0 text-zinc-400">
-                    © 2026 Company Name
-=======
                     </a> --}}
                 </p>
 
                 <p class="mt-4 text-sm sm:order-first sm:mt-0 text-zinc-400">
                     © 2022 Company Name
->>>>>>> feat/session4
                 </p>
             </div>
         </div>
