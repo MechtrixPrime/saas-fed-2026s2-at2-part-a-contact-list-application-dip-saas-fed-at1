@@ -4,13 +4,6 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-<<<<<<< HEAD
-                <div class="shrink-0 flex items-center"></div>
-
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                        ToDo
-=======
                 <div class="shrink-0 flex items-center">
                     {{-- <a href="{{ route('home') }}">
                         <x-application-logo
@@ -39,19 +32,15 @@
                         {{ __('About') }}
                     </x-nav-link> --}}
 
->>>>>>> feat/session4
                 </div>
 
             </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6 gap-4">
-<<<<<<< HEAD
-=======
 
                 @auth
 
->>>>>>> feat/session4
                     <x-dropdown align="right" width="48">
 
                         <x-slot name="trigger">
@@ -59,10 +48,7 @@
                                 class="inline-flex items-center px-3 py-2 border border-transparent
                                    text-sm leading-4 font-medium rounded-md text-zinc-500 bg-white
                                    hover:text-zinc-700 focus:outline-none transition ease-in-out duration-150">
-<<<<<<< HEAD
-=======
                                 <div>{{ Auth::user()->name }}</div>
->>>>>>> feat/session4
 
                                 <div class="ms-1">
                                     <i class="fa-solid fa-caret-down "></i>
@@ -71,12 +57,6 @@
                         </x-slot>
 
                         <x-slot name="content">
-<<<<<<< HEAD
-
-                        </x-slot>
-
-                    </x-dropdown>
-=======
                             <x-dropdown-link :href="route('profile.edit')">
                                 {{ __('Profile') }}
                             </x-dropdown-link>
@@ -107,7 +87,6 @@
                         </x-primary-link-button>
                     @endif --}}
                 @endauth
->>>>>>> feat/session4
             </div>
 
             <!-- Hamburger -->
@@ -133,8 +112,6 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-<<<<<<< HEAD
-=======
             @auth
                 <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                     {{ __('Dashboard') }}
@@ -142,29 +119,10 @@
             @else
 
             @endauth
->>>>>>> feat/session4
         </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-zinc-200">
-<<<<<<< HEAD
-                <div class="px-4">
-                    <div class="font-medium text-base text-zinc-800"></div>
-                    <div class="font-medium text-sm text-zinc-500"></div>
-                </div>
-
-                <div class="mt-3 space-y-1">
-
-                    <!-- Authentication -->
-                    <form method="POST">
-                        @csrf
-
-                        <x-responsive-nav-link onclick="event.preventDefault();
-                                               this.closest('form').submit();">
-                        </x-responsive-nav-link>
-                    </form>
-                </div>
-=======
             @auth
                 <div class="px-4">
                     <div class="font-medium text-base text-zinc-800">{{ Auth::user()->name }}</div>
@@ -203,7 +161,6 @@
 
             @endauth
 
->>>>>>> feat/session4
         </div>
     </div>
 </nav>
