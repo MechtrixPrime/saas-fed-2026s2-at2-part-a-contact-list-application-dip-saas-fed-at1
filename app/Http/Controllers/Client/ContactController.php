@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Client;
 
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 final class ContactController
@@ -64,7 +63,6 @@ final class ContactController
 
         return view('client.contacts.edit', ['contact' => $contact]);
     }
-
 
     // public function read_contact($id)
     // {

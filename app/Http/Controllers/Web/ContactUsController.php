@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
+
 // use App\Http\Requests\StoreContactUsRequest;
 // use App\Models\Message;
 // use App\Models\Topic;
@@ -42,8 +43,6 @@ final class ContactUsController extends Controller
                 'description' => 'Creating RESTful APIs',
             ],
         ];
-
-
 
         // return the contact-us view with the topics
         return view('web.static.contact-us', compact('topics'));

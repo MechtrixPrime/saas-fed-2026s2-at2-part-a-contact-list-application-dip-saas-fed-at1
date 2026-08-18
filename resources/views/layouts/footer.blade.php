@@ -211,7 +211,7 @@
                 </p>
 
                 <p class="mt-4 text-sm sm:order-first sm:mt-0 text-zinc-400">
-                    © 2022 Company Name
+                    ©2026 Company Name
                 </p>
             </div>
         </div>
