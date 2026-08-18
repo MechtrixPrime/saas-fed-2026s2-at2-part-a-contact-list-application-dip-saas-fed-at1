@@ -101,9 +101,6 @@
             "@test"
         ]
     },
-    "pre-package-uninstall": [
-        "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
-    ],
     "extra": {
         "laravel": {
             "dont-discover": []
