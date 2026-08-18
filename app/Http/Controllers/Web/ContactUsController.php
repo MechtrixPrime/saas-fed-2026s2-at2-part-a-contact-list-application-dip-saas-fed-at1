@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Contracts\View\View;
 
 // use App\Http\Requests\StoreContactUsRequest;
 // use App\Models\Message;
@@ -12,7 +13,7 @@ use App\Http\Controllers\Controller;
 
 final class ContactUsController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         // Get the topics
         // $topics = Topic::all();
@@ -48,7 +49,7 @@ final class ContactUsController extends Controller
         return view('web.static.contact-us', compact('topics'));
     }
 
-    public function thankyou()
+    public function thankyou(): View
     {
         return view('web.static.thank-you');
     }

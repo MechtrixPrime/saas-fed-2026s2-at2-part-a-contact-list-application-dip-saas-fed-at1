@@ -482,6 +482,7 @@ Before each class, confirm:
 - [ ] Database migrated.
 - [ ] `npm run dev` running.
 - [ ] Laravel application loads successfully.
+- [ ] Run `composer run check` to make highlight the assessment issue you need to fix
 
 ---
 

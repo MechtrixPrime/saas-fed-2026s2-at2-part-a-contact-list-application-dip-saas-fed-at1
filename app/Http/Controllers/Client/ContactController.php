@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers\Client;
 
-use Illuminate\View\View;
+use Illuminate\Contracts\View\View;
 
 final class ContactController
 {
