@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('topic_id')
+            $table->foreignUlid('topic_id')
                 ->constrained()
                 ->cascadeOnDelete();
             $table->string('name');
