@@ -14,9 +14,6 @@ final class ContactController
         $contact = [
             'id' => 1,
             'name' => 'Alice Smith',
-            'email' => 'alice@example.com',
-            'phone' => '0412 345 678',
-            'active' => true,
         ];
 
         return view('client.contacts.index', ['contact' => $contact]);
@@ -28,9 +25,6 @@ final class ContactController
         $contact = [
             'id' => 1,
             'name' => 'Alice Smith',
-            'email' => 'alice@example.com',
-            'phone' => '0412 345 678',
-            'active' => true,
         ];
 
         return view('client.contacts.show', ['contact' => $contact]);
@@ -42,9 +36,6 @@ final class ContactController
         $contact = [
             'id' => 1,
             'name' => 'Alice Smith',
-            'email' => 'alice@example.com',
-            'phone' => '0412 345 678',
-            'active' => true,
         ];
 
         return view('client.contacts.create', ['contact' => $contact]);
@@ -56,16 +47,8 @@ final class ContactController
         $contact = [
             'id' => 1,
             'name' => 'Alice Smith',
-            'email' => 'alice@example.com',
-            'phone' => '0412 345 678',
-            'active' => true,
         ];
 
         return view('client.contacts.edit', ['contact' => $contact]);
     }
-
-    // public function read_contact($id)
-    // {
-    //     return "Welcome to the index method in the contact controller";
-    // }
 }
