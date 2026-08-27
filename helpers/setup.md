@@ -1,11 +1,16 @@
 
 Run the following if you are setting up your project
 
+#### Important Checks
+
+If you're not on the Tafe Computers you can update all the following otherwise you can ignore them if their not the correct versions.
 
 ```bash
 node --version
 ```
 should be: v24.10.0 or later 
+
+slight note: to update npm you need to install a later version of "node" but this might be blocked so ignore it
 
 ```bash
 npm --version
@@ -15,6 +20,8 @@ should be: 11.6.1 or later
 ```bash
 git --version
 ```
+
+#### Extra Installs (Not Required)
 
 This is in the session mats, so I'm not sure if we're using this.. but i added it anyways
 ```bash
@@ -26,19 +33,16 @@ npm -g i pnpm
 ```
 then check the version (10.28.2 or later)
 
-slight note: to update npm you need to install a later version of "node" but this might be blocked so ignore it
-
---- 
 
 PHP and Composer
 --
-Notice: to run these commands on VS code, ensure laragon is added to "path" by going on laragon:
+Notice: to run these commands on VS code, ensure laragon is added to "path" by going on laragon: <BR>
 `
  Menu -> Tools -> Path -> Add Laragon to path
-`
+` <BR>
 Then you might have to log off and on to see effects
 
-Side note: this is confirmed to have worked on Tafe computers as I did it in room "303" on computer second last on the right (near the window)
+Side note: this is confirmed to have worked on Tafe computers as I did it on one of the Tafe computers
 
 Run the following commands:
 
@@ -50,9 +54,7 @@ php --version
 ```bash
 composer --version
 ```
-Both should be able to run, if they don't then most likely Laragon wasn't/isn't added to path
-
-
+Both should be able to run, if they don't then most likely Laragon isn't added to path
 
 ---
 
