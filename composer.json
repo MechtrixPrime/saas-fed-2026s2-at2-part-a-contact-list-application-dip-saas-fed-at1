@@ -48,10 +48,6 @@
             "npm install --ignore-scripts",
             "npm run build"
         ],
-        "test": [
-            "@php artisan config:clear --ansi @no_additional_args",
-            "@php artisan test"
-        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
@@ -76,40 +72,35 @@
         ],
         "dev-win": [
             "Composer\\Config::disableProcessTimeout",
-            "pnpm dlx  concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\"  \"mailpit --smtp=0.0.0.0:2525\" --names=server,queue,vite,mailpit"
-        ],
-        "dev-win-npm": [
-            "Composer\\Config::disableProcessTimeout",
-            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\"  \"mailpit --smtp=0.0.0.0:2525\" --names=server,queue,vite,mailpit"
+            "npx dlx  concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"npm run dev\"  \"mailpit --smtp=0.0.0.0:2525\" --names=server,queue,vite,mailpit"
         ],
         "dev-linux": [
             "clear",
             "Composer\\Config::disableProcessTimeout",
-            "pnpm dlx  concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74,#74fdc5\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" \"mailpit --smtp=0.0.0.0:2525\" --names=server,queue,logs,vite,mailpit"
-        ],
-        "lint": [
-            "pint --parallel"
+            "npx dlx  concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74,#74fdc5\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" \"mailpit --smtp=0.0.0.0:2525\" --names=server,queue,logs,vite,mailpit"
         ],
         "lint:check": [
             "pint --parallel --test"
         ],
         "ci:check": [
             "Composer\\Config::disableProcessTimeout",
-            "@test"
+            "@check"
         ],
         "test": [
             "@php artisan config:clear --ansi",
-            "@lint:check",
             "@php artisan test"
         ],
         "phpstan": [
             "@php artisan config:clear --ansi",
-            "./vendor/bin/phpstan analyse --memory-limit=2G"
+            "./vendor/bin/phpstan analyse app tests --memory-limit=2G --level=3"
+        ],
+        "check": [
+            "Composer\\Config::disableProcessTimeout",
+            "@lint:check",
+            "@phpstan",
+            "@test"
         ]
     },
-    "pre-package-uninstall": [
-        "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
-    ],
     "extra": {
         "laravel": {
             "dont-discover": []
