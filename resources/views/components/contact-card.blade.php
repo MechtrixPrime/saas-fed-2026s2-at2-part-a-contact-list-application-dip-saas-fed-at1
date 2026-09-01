@@ -1,4 +1,4 @@
-@dump($attributes)
+<!-- @dump($attributes) -->
 @props([
     'contact',
 ])
@@ -14,7 +14,7 @@
     </div>
 </div>
 
-{{-- <div {{ $attributes->merge(['class' => 'contact-card']) }}>
+<div {{ $attributes->merge(['class' => 'contact-card']) }}>
     <h2>{{ $contact['name'] }}</h2>
     <p>{{ $contact['email'] }}</p>
     <p>{{ $contact['phone'] }}</p>
@@ -24,4 +24,4 @@
         {{ $actions }}
     </div>
     {{ $slot }}
-</div> --}}
+</div>

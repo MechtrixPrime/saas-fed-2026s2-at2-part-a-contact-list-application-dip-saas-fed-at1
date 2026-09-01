@@ -14,7 +14,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('contacts', function (Blueprint $table): void {
-            $table->id();
+            $table->ulid('id');
             $table->timestamps();
         });
     }

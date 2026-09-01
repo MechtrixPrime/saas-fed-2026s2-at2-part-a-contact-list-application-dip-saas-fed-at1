@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 use Illuminate\Database\Seeder;
 
 final class DatabaseSeeder extends Seeder
@@ -27,7 +28,7 @@ final class DatabaseSeeder extends Seeder
 
         DB::table('users')->insert([
             [
-                'id' => 1,
+                'id' => (string) Str::ulid(),
                 'name' => 'John Carter',
                 'email' => 'john@example.com',
                 'password' => Hash::make('password'),
@@ -35,7 +36,7 @@ final class DatabaseSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'id' => 2,
+                'id' => (string) Str::ulid(),
                 'name' => 'Sarah Wilson',
                 'email' => 'sarah@example.com',
                 'password' => Hash::make('password'),
@@ -43,7 +44,7 @@ final class DatabaseSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-                'id' => 3,
+              'id' => (string) Str::ulid(),
                 'name' => 'Michael Brown',
                 'email' => 'michael@example.com',
                 'password' => Hash::make('password'),
@@ -60,42 +61,42 @@ final class DatabaseSeeder extends Seeder
 
         DB::table('contacts')->insert([
             [
-                'id' => 1,
+                'id' => (string) Str::ulid(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'id' => 2,
+                'id' => (string) Str::ulid(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'id' => 3,
+                'id' => (string) Str::ulid(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'id' => 4,
+                'id' => (string) Str::ulid(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'id' => 5,
+                'id' => (string) Str::ulid(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'id' => 6,
+               'id' => (string) Str::ulid(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'id' => 7,
+                'id' => (string) Str::ulid(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'id' => 8,
+                'id' => (string) Str::ulid(),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

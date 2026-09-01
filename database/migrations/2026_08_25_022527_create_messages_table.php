@@ -12,12 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('messages', function (Blueprint $table) {
-            $table->id();
+            $table->ulid('id')->primary();
             $table->foreignUlid('topic_id')
                 ->constrained()
                 ->cascadeOnDelete();
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->index();
             $table->string('subject', 128);
             $table->text('message');
             $table->timestamps();
