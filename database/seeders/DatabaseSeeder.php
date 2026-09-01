@@ -44,7 +44,7 @@ final class DatabaseSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
-              'id' => (string) Str::ulid(),
+                'id' => (string) Str::ulid(),
                 'name' => 'Michael Brown',
                 'email' => 'michael@example.com',
                 'password' => Hash::make('password'),
