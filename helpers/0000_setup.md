@@ -1,16 +1,21 @@
+# Section 1 - Setting up:
 
-Run the following if you are setting up your project
+When you either setting up the project or moving to another computer, you might have to run the following this section.
 
-#### Important Checks
+#### Checking versions
+You can either run these commands on VS code or laragon terminal
 
+> Notes: <BR>
 If you're not on the Tafe Computers you can update all the following otherwise you can ignore them if their not the correct versions.
+
+the commands:
 
 ```bash
 node --version
 ```
 should be: v24.10.0 or later 
 
-slight note: to update npm you need to install a later version of "node" but this might be blocked so ignore it
+> Note: to update npm you need to install a later version of "node" but this might be blocked on the tafe computers so ignore it
 
 ```bash
 npm --version
@@ -32,7 +37,6 @@ if that doesn't work first use:
 npm -g i pnpm
 ```
 then check the version (10.28.2 or later)
-
 
 PHP and Composer
 --
@@ -72,12 +76,10 @@ Notice: it does the following commands
 "npm install --ignore-scripts",
 "npm run build"
 ```
-Instead of running one by one
+Instead of running one by ones
 
----
-# Running the Servers:
-
-
+--- 
+# Section 2 - Running The Servers:
 For Main:
 
 ```bash
