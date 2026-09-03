@@ -76,9 +76,6 @@ Notice: it does the following commands
 "npm install --ignore-scripts",
 "npm run build"
 ```
-<<<<<<< HEAD
-Instead of running one by ones
-=======
 Instead of running one by one
 
 ---
@@ -99,7 +96,6 @@ C:\ProgramData\Laragon\www\
 ---
 # Running the Servers:
 
->>>>>>> 158fe6dc9dec879f716e84758232a9f3e515edc8
 
 --- 
 # Section 2 - Running The Servers:
